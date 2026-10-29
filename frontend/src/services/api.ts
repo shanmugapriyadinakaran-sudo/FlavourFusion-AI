@@ -10,7 +10,7 @@ import {
   AssistantChatResponse
 } from '../types';
 
-const API_BASE = (import.meta.env.VITE_API_BASE || '/api').replace(/\/$/, '');
+const API_BASE = ((import.meta as any).env?.VITE_API_BASE || '/api').replace(/\/$/, '');
 
 function getAuthHeader(): Record<string, string> {
   const token = localStorage.getItem('flavorfusion_token');
