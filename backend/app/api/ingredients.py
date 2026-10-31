@@ -17,13 +17,31 @@ def get_ingredients(
     cuisine: Optional[str] = None,
     exclude_allergen: Optional[str] = None,
     skip: int = Query(0, ge=0),
-    limit: int = Query(100, ge=1, le=200),
+    limit: int = Query(350, ge=1, le=1000),
     db: Session = Depends(get_db)
 ):
     query = db.query(Ingredient)
 
     if category and category.lower() != "all":
-        query = query.filter(Ingredient.category.ilike(category))
+        cat_lower = category.lower().strip()
+        if "veg" in cat_lower:
+            query = query.filter(or_(Ingredient.category.ilike("%vegetable%"), Ingredient.category.ilike("%produce%")))
+        elif "fruit" in cat_lower:
+            query = query.filter(Ingredient.category.ilike("%fruit%"))
+        elif "spice" in cat_lower or "herb" in cat_lower:
+            query = query.filter(or_(Ingredient.category.ilike("%spice%"), Ingredient.category.ilike("%herb%")))
+        elif "grain" in cat_lower or "lentil" in cat_lower or "dal" in cat_lower or "legume" in cat_lower:
+            query = query.filter(or_(Ingredient.category.ilike("%grain%"), Ingredient.category.ilike("%lentil%"), Ingredient.category.ilike("%legume%"), Ingredient.category.ilike("%pasta%")))
+        elif "dairy" in cat_lower or "cheese" in cat_lower:
+            query = query.filter(Ingredient.category.ilike("%dairy%"))
+        elif "meat" in cat_lower or "seafood" in cat_lower:
+            query = query.filter(Ingredient.category.ilike("%meat%"))
+        elif "sweet" in cat_lower or "dessert" in cat_lower or "baker" in cat_lower:
+            query = query.filter(or_(Ingredient.category.ilike("%sweet%"), Ingredient.category.ilike("%dessert%"), Ingredient.category.ilike("%bake%")))
+        elif "sauce" in cat_lower or "condiment" in cat_lower or "oil" in cat_lower:
+            query = query.filter(or_(Ingredient.category.ilike("%sauce%"), Ingredient.category.ilike("%condiment%"), Ingredient.category.ilike("%pantry%")))
+        else:
+            query = query.filter(Ingredient.category.ilike(f"%{category}%"))
 
     ingredients = query.offset(skip).limit(limit).all()
 

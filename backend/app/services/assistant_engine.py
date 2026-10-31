@@ -320,6 +320,100 @@ KNOWLEDGE_CARDS = [
             )
         ],
         "vibe": "Master Flavor Enhancer 🧂"
+    },
+    # 17. South Indian Tadka & Tempering Science
+    {
+        "keywords": ["tadka", "tempering", "curry leaves", "mustard seeds", "hing", "asafoetida", "south indian"],
+        "reply": (
+            "Tadka (or *Thalithal* in Tamil, *Popu* in Telugu) is masterclass fat-soluble extraction! 🍃🥥\n\n"
+            "1. **Mustard Seed Physics**: When black mustard seeds crackle in hot oil (~180°C), thermal shock breaks their hulls, releasing sinigrin and enzymatically converting it to pungent, nutty **allyl isothiocyanate**.\n"
+            "2. **Curry Leaf Terpenes**: Fresh curry leaves contain volatile beta-caryophyllene, alpha-pinene, and linalool. These aroma compounds are hydrophobic (oil-soluble); plunging them into hot ghee or coconut oil binds these terpenes directly into the cooking fat, perfuming the entire dish!\n"
+            "3. **Asafoetida (Hing) Magic**: Raw hing smells sulfurous and sharp, but cooking it in fat instantly unlocks pleasant roasted-garlic and leek umami notes from ferulic acid."
+        ),
+        "pairings": [
+            SuggestedPairingItem(
+                title="Grandmother's Royal Tadka",
+                ingredients=["Curry Leaves", "Mustard Seeds", "Asafoetida", "Ghee"],
+                tastes_like="Nutty Crackling Aromatic Emulsion",
+                reason="Hot fat extracts volatile terpenes and blooms sinigrin into savory nuttiness."
+            )
+        ],
+        "vibe": "Tadka Virtuoso 🍃"
+    },
+    # 18. North Indian Bhunao & Makhani Science
+    {
+        "keywords": ["bhunao", "makhani", "paneer butter masala", "shahi paneer", "butter chicken", "kasuri methi", "north indian"],
+        "reply": (
+            "The magic of North Indian gravies lies in the ancient technique of **Bhunao** and the secret compound **Sotolon**! 🍛👑\n\n"
+            "• **The Bhunao Process**: Sautéing onion-ginger-garlic paste and tomatoes on low heat until water fully evaporates and free oil separates. This triggers non-enzymatic caramelization and high Maillard reactions without scorching.\n"
+            "• **Kasuri Methi (The Restaurant Secret)**: Dried fenugreek leaves contain an extraordinarily potent lactone called **sotolon**. Even in parts-per-billion concentrations, sotolon imparts a rich maple-sweet, warm herbal finish that separates roadside dhabas and 5-star hotels from ordinary curries!"
+        ),
+        "pairings": [
+            SuggestedPairingItem(
+                title="Imperial Shahi Makhani Foundation",
+                ingredients=["Tomato", "Paneer", "Butter", "Kasuri Methi", "Garam Masala"],
+                tastes_like="Silky Sweet-Savory Royal Tomato Velvet",
+                reason="Bhunao caramelization meets sotolon fenugreek lactones."
+            )
+        ],
+        "vibe": "Mughlai Royalty 👑"
+    },
+    # 19. South Indian Fermentation Science (Dosa & Idli)
+    {
+        "keywords": ["dosa", "idli", "batter", "fermentation", "urad dal", "crispy dosa", "ghee roast"],
+        "reply": (
+            "Dosa and Idli batter is one of the world's most sophisticated wild lactic acid fermentations! 🥞🔬\n\n"
+            "• **Microbial Alchemy**: Wild microorganisms (*Leuconostoc mesenteroides* and *Lactobacillus fermentum*) naturally present on urad dal skins ferment starches into lactic acid (giving signature tang) and carbon dioxide (aerating the batter into a fluffy sponge).\n"
+            "• **Surface Maillard Crisp**: When ladlefuls of fermented batter hit a smoking cast-iron tawa with ghee, the acidic sugars undergo instantaneous Maillard reactions, creating the wafer-thin, golden-brown lattice characteristic of a crispy Ghee Roast Dosa!"
+        ),
+        "pairings": [
+            SuggestedPairingItem(
+                title="Crispy Ghee Roast Duo",
+                ingredients=["Idli Dosa Batter", "Ghee", "Curry Leaves", "Mustard Seeds"],
+                tastes_like="Shatteringly Crisp Golden Tang with Ghee Diacetyl",
+                reason="Lactic acid tang crisped with clarified butterfat Maillard browning."
+            )
+        ],
+        "vibe": "Fermentation Gold 🥞"
+    },
+    # 20. Rasam & Sambar Chemistry
+    {
+        "keywords": ["rasam", "sambar", "toor dal", "milagu", "drumstick"],
+        "reply": (
+            "Rasam and Sambar are centuries-old Ayurvedic digestive wonders engineered through taste balance! 🥣🌿\n\n"
+            "• **Tartaric Acid from Tamarind**: Tamarind pulp brings sharp tartaric acid that cuts through heavy lentil starches and tenderizes fibrous vegetables like drumstick.\n"
+            "• **Piperine & Cumin Thermogenesis**: In Chettinad Pepper Rasam (*Milagu Rasam*), piperine from black pepper and cuminaldehyde stimulate salivary and gastric enzymes, warming the body and soothing colds instantly."
+        ),
+        "pairings": [
+            SuggestedPairingItem(
+                title="Chettinad Healing Rasam",
+                ingredients=["Black Pepper", "Garlic", "Cumin Seeds", "Curry Leaves", "Ghee"],
+                tastes_like="Fiery Citrus-Pepper Warming Nectar",
+                reason="Piperine and allicin stimulate thermogenesis and awaken taste receptors."
+            )
+        ],
+        "vibe": "Ayurvedic Elixir 🥣"
+    },
+    # 21. Indian Street Chaat 5-Point Balance
+    {
+        "keywords": ["chaat", "amchur", "chaat masala", "kala namak", "black salt", "guava chaat", "papdi"],
+        "reply": (
+            "Indian Chaat is the ultimate sensory explosion because it hits all 5 human taste receptors at maximum intensity! 💥🍈\n\n"
+            "1. **Sour**: Amchur (sun-dried raw mango) & tamarind citric/tartaric acids.\n"
+            "2. **Sweet**: Jaggery or sweet fruit esters (like fresh pink guava or ripe mango).\n"
+            "3. **Spicy**: Green chili capsaicin and black pepper piperine.\n"
+            "4. **Salty**: Mineral table salt.\n"
+            "5. **Sulfurous Umami**: **Kala Namak** (Himalayan black salt) contains sodium sulfide and iron minerals that create a savory egg-like, gamey umami kick that makes street chaat downright addictive!"
+        ),
+        "pairings": [
+            SuggestedPairingItem(
+                title="Street-Style Spiced Guava Chaat",
+                ingredients=["Guava", "Chaat Masala", "Lime", "Chili Pepper"],
+                tastes_like="Electric Sweet-Tart-Spicy Crunch",
+                reason="5-point taste axis: fruit fructose balanced by amchur acid and black salt sulfur."
+            )
+        ],
+        "vibe": "Street Food Explosion 💥"
     }
 ]
 
@@ -349,14 +443,27 @@ class AssistantEngine:
 
         # 3. Dynamic ingredient queries (e.g. "What can I make with green apple and cheddar?" or "I have avocado and tomato")
         common_ingredients = [
-            "green apple", "salt", "black salt", "cheddar", "butter", "parmesan", "mozzarella",
-            "egg", "salmon", "shrimp", "bacon", "watermelon", "pineapple", "banana", "orange",
-            "peach", "blueberry", "raspberry", "fig", "potato", "sweet potato", "eggplant",
-            "zucchini", "asparagus", "cauliflower", "broccoli", "corn", "shallot", "scallions",
-            "rosemary", "thyme", "oregano", "dill", "maple syrup", "miso", "tahini", "walnuts",
-            "mango", "curd", "cardamom", "vanilla", "soy sauce", "strawberry",
-            "avocado", "tomato", "basil", "garlic", "olive oil", "honey", "lime",
-            "cumin", "mint", "dark chocolate", "chili", "feta", "pistachio"
+            # Fruits & Vegetables
+            "green apple", "apple", "papaya", "guava", "lychee", "jackfruit", "custard apple",
+            "fig", "pineapple", "banana", "orange", "kiwi", "grapes", "dragonfruit",
+            "watermelon", "blueberry", "raspberry", "peach", "strawberry", "mango", "lemon", "lime",
+            "okra", "bhindi", "bitter gourd", "karela", "bottle gourd", "lauki", "ridge gourd", "turai",
+            "brinjal", "eggplant", "drumstick", "spinach", "palak", "fresh methi", "fenugreek",
+            "cauliflower", "gobi", "green peas", "matar", "carrot", "gajar", "radish", "mooli",
+            "beetroot", "capsicum", "bell pepper", "cabbage", "pumpkin", "potato", "sweet potato",
+            "zucchini", "asparagus", "broccoli", "corn", "shallot", "scallions", "onion", "garlic", "ginger",
+            # South & North Indian Staples
+            "curry leaves", "mustard seeds", "asafoetida", "hing", "urad dal", "chana dal", "toor dal",
+            "fenugreek seeds", "sambar powder", "rasam powder", "idli dosa batter", "coconut", "coconut oil",
+            "kasuri methi", "garam masala", "amchur", "cumin seeds", "cumin", "black cardamom", "cardamom",
+            "cloves", "mustard oil", "chaat masala", "rajma", "kashmiri red chili", "fennel seeds", "bay leaf",
+            "paneer", "ghee", "curd", "yogurt", "tamarind", "black pepper", "coriander seeds",
+            # Western / Global Basics
+            "salt", "sea salt", "black salt", "cheddar", "butter", "parmesan", "mozzarella",
+            "egg", "salmon", "shrimp", "bacon", "chicken", "beef", "pork",
+            "rosemary", "thyme", "oregano", "basil", "dill", "cilantro", "mint",
+            "maple syrup", "honey", "miso", "tahini", "walnuts", "pistachio", "peanuts",
+            "dark chocolate", "vanilla", "soy sauce", "balsamic vinegar", "olive oil", "pasta"
         ]
         detected = [ing for ing in common_ingredients if ing in cleaned]
 

@@ -192,6 +192,86 @@ EMERGENT_FLAVOR_SYNERGIES = [
             DishSuggestion(name="Crispy Rosemary Garlic Skillet Chicken", description="Pan-seared golden chicken cutlets basted with foaming rosemary-garlic butter.", difficulty="Medium", cook_time_mins=18, vibe_tag="🔥 20-Minute Masterpiece", meal_type="Dinner"),
             DishSuggestion(name="Roasted Garlic Herb Chicken Thighs", description="Crisp-skinned chicken thighs roasted over whole garlic cloves and fresh rosemary sprigs.", difficulty="Easy", cook_time_mins=35, vibe_tag="✨ Hearty Comfort", meal_type="Dinner")
         ]
+    },
+    {
+        "keys": {"curry leaves", "mustard seeds", "coconut"},
+        "tastes_like": "Aromatic South Indian Coastal Tadka & Coconut Tempering 🍃🥥",
+        "explanation": "Popped black mustard seeds release pungent allyl isothiocyanate while hot coconut oil extracts lipid-soluble beta-caryophyllene from fresh curry leaves, creating the quintessential South Indian aromatic foundation.",
+        "vibe": "🌴 Coastal Malabar Magic",
+        "dishes": [
+            DishSuggestion(name="Classic Kerala Coconut Aviyal or Poriyal", description="Fresh tender vegetables tossed in freshly grated coconut, tempered with crackling mustard seeds and fragrant curry leaves.", difficulty="Easy", cook_time_mins=15, vibe_tag="✨ Pure Tradition", meal_type="Side"),
+            DishSuggestion(name="South Indian Coconut Chutney Tadka", description="Creamy ground coconut chutney finished with a sizzling tadka of mustard seeds, curry leaves, and dry red chili.", difficulty="Easy", cook_time_mins=8, vibe_tag="🔥 Breakfast Essential", meal_type="Condiment")
+        ]
+    },
+    {
+        "keys": {"toor dal", "curry leaves", "sambar powder"},
+        "tastes_like": "Soul-Satisfying Authentic Madras Drumstick Sambar 🍲",
+        "explanation": "Slow-stewed toor dal provides proteinaceous savory body, tamarind tartness balances the earthiness, and freshly bloomed sambar aromatics give comforting regional depth.",
+        "vibe": "✨ South Indian Soul Food",
+        "dishes": [
+            DishSuggestion(name="Authentic Madras Drumstick Sambar", description="Slow-simmered yellow pigeon peas with drumsticks, shallots, tamarind, and aromatic sambar masala.", difficulty="Medium", cook_time_mins=30, vibe_tag="🔥 Feast Standard", meal_type="Dinner"),
+            DishSuggestion(name="Mini Sambar Vada Dunk", description="Golden crispy medu vadas soaked in piping hot fragrant Madras sambar topped with ghee.", difficulty="Medium", cook_time_mins=25, vibe_tag="✨ Cafe Classic", meal_type="Breakfast")
+        ]
+    },
+    {
+        "keys": {"black pepper", "garlic", "cumin"},
+        "tastes_like": "Zesty Chettinad Pepper Rasam & Digestive Tonic 🥣",
+        "explanation": "Piperine in crushed black peppercorns combines synergistically with garlic allicin and cuminaldehyde, producing a soothing digestive broth that awakens the palate and clears the senses.",
+        "vibe": "🌿 Ancient Herbal Remedy",
+        "dishes": [
+            DishSuggestion(name="Chettinad Milagu Poondu Rasam", description="Spicy and tangy black pepper-garlic soup tempered with cumin and curry leaves in hot ghee.", difficulty="Easy", cook_time_mins=15, vibe_tag="✨ Monsoon Comfort", meal_type="Soup"),
+            DishSuggestion(name="Steamed Rice with Ghee & Hot Rasam", description="Piping hot jasmine or ponni rice mashed with A2 cow ghee and drenched in fiery pepper rasam.", difficulty="Easy", cook_time_mins=10, vibe_tag="❤️ Ultimate Comfort", meal_type="Lunch")
+        ]
+    },
+    {
+        "keys": {"paneer", "tomato", "kasuri methi"},
+        "tastes_like": "Velvety Shahi Makhani Gravy with Fenugreek Aroma 🍛",
+        "explanation": "Lycopene and umami-rich cooked tomatoes emulsified with butter provide a luxurious sweet-savory base, while crushed kasuri methi imparts sotolon lactones for that signature North Indian restaurant aroma.",
+        "vibe": "👑 Royal Dawat Luxury",
+        "dishes": [
+            DishSuggestion(name="Delhi Shahi Paneer Butter Masala", description="Tender cottage cheese cubes simmered in a silky tomato, cashew, and butter gravy perfumed with crushed kasuri methi.", difficulty="Medium", cook_time_mins=25, vibe_tag="🔥 Restaurant Quality", meal_type="Dinner"),
+            DishSuggestion(name="Smoky Paneer Tikka Lababdar", description="Charred tandoori paneer simmered with caramelized onions, tomatoes, and dried fenugreek leaves.", difficulty="Hard", cook_time_mins=35, vibe_tag="✨ Festive Star", meal_type="Dinner")
+        ]
+    },
+    {
+        "keys": {"idli dosa batter", "ghee"},
+        "tastes_like": "Crispy Golden South Indian Ghee Roast Dosa 🥞",
+        "explanation": "Fermented lactic acid batter undergoes rapid Maillard browning when poured on a blazing hot tawa; clarified butter fat (ghee) crisps the edges and infuses rich nutty diacetyl notes.",
+        "vibe": "🔥 Tiffin Stall Legend",
+        "dishes": [
+            DishSuggestion(name="Crispy Ghee Roast Paper Dosa", description="Wafer-thin, lace-edged crepe roasted in pure golden ghee, served with coconut chutney and piping hot sambar.", difficulty="Medium", cook_time_mins=12, vibe_tag="✨ Morning Bliss", meal_type="Breakfast"),
+            DishSuggestion(name="Ghee Podi Thatte Idli", description="Thick pillowy steamed rice cakes drenched in molten ghee and gunpowder roasted lentil spice mix.", difficulty="Easy", cook_time_mins=15, vibe_tag="🔥 South Indian Favorite", meal_type="Breakfast")
+        ]
+    },
+    {
+        "keys": {"rajma", "garam masala", "onion"},
+        "tastes_like": "Hearty Punjabi Dhaba Style Rajma Masala 🍛",
+        "explanation": "Slow-stewed red kidney beans release thick amylose starches that bind with caramelized onion-ginger bhunao and warming eugenol/cinnamon terpenes from garam masala.",
+        "vibe": "❤️ Pure Punjabi Nostalgia",
+        "dishes": [
+            DishSuggestion(name="Dhaba Style Punjabi Rajma Chawal", description="Melt-in-mouth kidney beans simmered in a spiced onion-tomato gravy, served with fragrant cumin basmati rice.", difficulty="Medium", cook_time_mins=40, vibe_tag="🔥 Sunday Special", meal_type="Lunch"),
+            DishSuggestion(name="Smoked Kashmiri Rajma Galouti", description="Silky spiced red kidney bean patties shallow-fried in ghee, served with mint chutney.", difficulty="Medium", cook_time_mins=25, vibe_tag="✨ Gourmet Starter", meal_type="Appetizer")
+        ]
+    },
+    {
+        "keys": {"guava", "chaat masala"},
+        "tastes_like": "Sweet-Tangy Mumbai Street Cart Pink Guava Chaat 🍈✨",
+        "explanation": "Tropical sweet esters in crunchy ripe guava are electrified by the tart malic amchur, pungent black salt (sulfur notes), and roasted cumin in chaat masala.",
+        "vibe": "⚡ Mind-Blowing Sweet & Tangy",
+        "dishes": [
+            DishSuggestion(name="Street-Style Spiced Guava Wedges", description="Firm pink guava sliced into crescents, dusted generously with chaat masala, red chili, and a squeeze of fresh lime.", difficulty="Easy", cook_time_mins=5, vibe_tag="🔥 Instant Hit", meal_type="Snack"),
+            DishSuggestion(name="Tropical Guava & Pomegranate Chaat", description="Chilled diced guava and ruby pomegranate jewels tossed with mint, amchur, and lemon juice.", difficulty="Easy", cook_time_mins=7, vibe_tag="✨ Refreshing Crunch", meal_type="Salad")
+        ]
+    },
+    {
+        "keys": {"okra", "amchur", "cumin"},
+        "tastes_like": "Crispy Tart-Spiced Kurkuri Bhindi (Okra) 🌶️",
+        "explanation": "Tart amchur (dried mango powder) breaks down okra mucilage upon cooking, while cumin pyrazines coat the crispy vegetable strips for zero-sliminess crunch.",
+        "vibe": "💥 Irresistible Crisp Crunch",
+        "dishes": [
+            DishSuggestion(name="Crispy Kurkuri Bhindi Fries", description="Thinly julienned okra tossed with chickpea flour, cumin, and dry mango powder, flash-fried until ultra-crisp.", difficulty="Easy", cook_time_mins=15, vibe_tag="✨ Snack Addiction", meal_type="Snack"),
+            DishSuggestion(name="North Indian Masala Bhindi Do Pyaza", description="Tender okra sautéed with double the onions, roasted cumin seeds, and a sharp amchur finish.", difficulty="Medium", cook_time_mins=20, vibe_tag="🔥 Home-Style Winner", meal_type="Side")
+        ]
     }
 ]
 

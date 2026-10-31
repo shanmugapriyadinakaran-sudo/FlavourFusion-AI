@@ -40,16 +40,23 @@ export const TasteProfile: React.FC = () => {
   // New ingredient chip inputs
   const [favInput, setFavInput] = useState('');
   const [dislikeInput, setDislikeInput] = useState('');
+  const [allergyInput, setAllergyInput] = useState('');
 
   const allergyOptions = [
-    'Dairy',
-    'Nuts',
-    'Gluten',
-    'Shellfish',
-    'Soy',
-    'Eggs',
+    'Dairy / Lactose',
     'Peanuts',
-    'Fish',
+    'Tree Nuts (Cashew, Almond, Walnut)',
+    'Gluten / Wheat',
+    'Shellfish & Crustaceans',
+    'Fish & Marine',
+    'Soy & Soybeans',
+    'Eggs',
+    'Mustard & Mustard Seeds',
+    'Sesame Seeds',
+    'Nightshades (Tomato, Eggplant)',
+    'Alliums (Garlic, Onion)',
+    'Mushrooms / Fungi',
+    'Sulfites',
   ];
 
   const cuisineOptions = [
@@ -156,6 +163,25 @@ export const TasteProfile: React.FC = () => {
     });
   };
 
+  const addAllergyFood = () => {
+    if (!allergyInput.trim()) return;
+    const clean = allergyInput.trim();
+    if (!preferences.allergies.includes(clean)) {
+      setPreferences({
+        ...preferences,
+        allergies: [...preferences.allergies, clean],
+      });
+    }
+    setAllergyInput('');
+  };
+
+  const removeAllergyFood = (name: string) => {
+    setPreferences({
+      ...preferences,
+      allergies: preferences.allergies.filter((i: string) => i !== name),
+    });
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
       {/* Header */}
@@ -187,33 +213,86 @@ export const TasteProfile: React.FC = () => {
       )}
 
       <form onSubmit={handleSave} className="space-y-8">
-        {/* Hard Allergen Exclusions Card */}
+        {/* Hard Allergy Foods & Exclusions Card */}
         <div className="bg-terracotta-50/70 dark:bg-terracotta-950/40 p-6 rounded-3xl border border-terracotta-200 dark:border-terracotta-900/60 shadow-xs space-y-4">
           <div className="flex items-center space-x-2 text-terracotta-800 dark:text-terracotta-300">
             <ShieldAlert className="w-5 h-5 text-terracotta-600" />
-            <h3 className="font-serif text-lg font-bold">Hard Allergy Exclusions</h3>
+            <h3 className="font-serif text-lg font-bold">Allergic Foods & Hard Exclusions</h3>
           </div>
           <p className="text-xs text-stone-600 dark:text-stone-300 leading-relaxed">
-            Ingredients containing selected allergens will receive a <strong className="text-terracotta-700 dark:text-terracotta-300">strict 0% match score</strong> and critical safety warnings in the Flavor Lab.
+            Specify foods or allergens you are allergic to. Any recipe or combination containing these ingredients will trigger a <strong className="text-terracotta-700 dark:text-terracotta-300">strict safety alert and 0% match score</strong>.
           </p>
-          <div className="flex flex-wrap gap-2">
-            {allergyOptions.map((allergen) => {
-              const isChecked = preferences.allergies.includes(allergen);
-              return (
-                <button
-                  type="button"
-                  key={allergen}
-                  onClick={() => toggleArrayItem('allergies', allergen)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold border transition-all cursor-pointer ${
-                    isChecked
-                      ? 'bg-terracotta-600 text-white border-terracotta-600 shadow-xs'
-                      : 'bg-white dark:bg-[#1b2320] text-stone-700 dark:text-stone-300 border-terracotta-200 dark:border-terracotta-900/60 hover:bg-terracotta-100 dark:hover:bg-terracotta-900/30'
-                  }`}
-                >
-                  {isChecked ? `✕ ${allergen} (Excluded)` : `+ ${allergen}`}
-                </button>
-              );
-            })}
+
+          {/* Quick Category Buttons */}
+          <div>
+            <span className="text-[11px] font-semibold text-terracotta-800/80 dark:text-terracotta-300/80 uppercase tracking-wider block mb-2">
+              Common Allergy Groups:
+            </span>
+            <div className="flex flex-wrap gap-2">
+              {allergyOptions.map((allergen) => {
+                const isChecked = preferences.allergies.includes(allergen);
+                return (
+                  <button
+                    type="button"
+                    key={allergen}
+                    onClick={() => toggleArrayItem('allergies', allergen)}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all cursor-pointer ${
+                      isChecked
+                        ? 'bg-terracotta-600 text-white border-terracotta-600 shadow-xs'
+                        : 'bg-white dark:bg-[#1b2320] text-stone-700 dark:text-stone-300 border-terracotta-200 dark:border-terracotta-900/60 hover:bg-terracotta-100 dark:hover:bg-terracotta-900/30'
+                    }`}
+                  >
+                    {isChecked ? `✕ ${allergen} (Excluded)` : `+ ${allergen}`}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Custom Allergy Food Input */}
+          <div className="pt-2 border-t border-terracotta-200/60 dark:border-terracotta-900/40">
+            <span className="text-[11px] font-semibold text-terracotta-800/80 dark:text-terracotta-300/80 uppercase tracking-wider block mb-2">
+              Add Specific Allergic Food:
+            </span>
+            <div className="flex space-x-2">
+              <input
+                type="text"
+                value={allergyInput}
+                onChange={(e) => setAllergyInput(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), addAllergyFood())}
+                placeholder="e.g. Cashews, Brinjal, Mustard, Crab, Sesame..."
+                className="w-full px-3.5 py-2 rounded-xl border border-terracotta-200 dark:border-terracotta-900 bg-white dark:bg-[#1b2320] text-stone-900 dark:text-ivory-100 placeholder-stone-400 text-xs focus:outline-none focus:ring-2 focus:ring-terracotta-500"
+              />
+              <button
+                type="button"
+                onClick={addAllergyFood}
+                className="px-4 py-2 rounded-xl bg-terracotta-700 hover:bg-terracotta-600 text-white font-semibold text-xs transition-colors shrink-0 cursor-pointer shadow-xs"
+              >
+                + Add Food
+              </button>
+            </div>
+
+            {/* Active Allergic Foods List */}
+            {preferences.allergies.length > 0 && (
+              <div className="mt-3">
+                <span className="text-[11px] text-stone-500 dark:text-stone-400 mb-1.5 block">
+                  Active Excluded Allergic Foods ({preferences.allergies.length}):
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {preferences.allergies.map((allergy) => (
+                    <span
+                      key={allergy}
+                      onClick={() => removeAllergyFood(allergy)}
+                      className="cursor-pointer px-2.5 py-1 rounded-xl bg-terracotta-100 dark:bg-terracotta-900/60 text-terracotta-800 dark:text-terracotta-200 text-xs font-semibold border border-terracotta-300 dark:border-terracotta-800 hover:bg-rose-100 dark:hover:bg-rose-950 transition-colors flex items-center gap-1.5"
+                      title="Click to remove exclusion"
+                    >
+                      <span>{allergy}</span>
+                      <span className="text-terracotta-600 dark:text-terracotta-400 font-bold">✕</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

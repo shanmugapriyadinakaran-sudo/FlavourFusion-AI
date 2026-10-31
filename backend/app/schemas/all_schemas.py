@@ -33,12 +33,12 @@ class UserPreferenceBase(BaseModel):
     disliked_ingredients: List[str] = []
     texture_preferences: List[str] = []
     aroma_preferences: List[str] = []
-    spice_tolerance: int = Field(default=3, ge=1, le=5)
-    sweet_affinity: int = Field(default=3, ge=1, le=5)
-    sour_affinity: int = Field(default=3, ge=1, le=5)
-    bitter_affinity: int = Field(default=2, ge=1, le=5)
-    umami_affinity: int = Field(default=4, ge=1, le=5)
-    salty_affinity: int = Field(default=3, ge=1, le=5)
+    spice_tolerance: int = Field(default=3, ge=0, le=5)
+    sweet_affinity: int = Field(default=3, ge=0, le=5)
+    sour_affinity: int = Field(default=3, ge=0, le=5)
+    bitter_affinity: int = Field(default=2, ge=0, le=5)
+    umami_affinity: int = Field(default=4, ge=0, le=5)
+    salty_affinity: int = Field(default=3, ge=0, le=5)
     dietary_preferences: List[str] = []
     allergies: List[str] = []
     budget_preference: str = "Moderate"

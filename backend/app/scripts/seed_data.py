@@ -1053,6 +1053,57 @@ def seed_database():
         except Exception as ex_comp:
             print(f"Notice on seeding comprehensive catalog: {ex_comp}")
 
+        # 2c. Seed Indian Cuisine (North & South) + Fruits & Veggies Expansion (221 items total)
+        try:
+            try:
+                from scripts.seed_indian_and_produce import NEW_INDIAN_AND_PRODUCE
+            except ImportError:
+                from backend.scripts.seed_indian_and_produce import NEW_INDIAN_AND_PRODUCE
+            for item in NEW_INDIAN_AND_PRODUCE:
+                existing = db.query(Ingredient).filter(Ingredient.name.ilike(item["name"])).first()
+                if not existing:
+                    ing = Ingredient(
+                        name=item["name"],
+                        slug=item["name"].lower().replace(" ", "-"),
+                        category=item["category"],
+                        description=item["description"],
+                        image_url=item.get("image_url"),
+                        default_unit=item.get("default_unit", "g"),
+                        allergens=item.get("allergens", []),
+                        cuisines=item.get("cuisines", []),
+                        is_curated=True
+                    )
+                    db.add(ing)
+                    db.flush()
+                    fp = IngredientFlavorProfile(
+                        ingredient_id=ing.id,
+                        sweet=item["sweet"],
+                        salty=item["salty"],
+                        sour=item["sour"],
+                        bitter=item["bitter"],
+                        umami=item["umami"],
+                        spicy=item["spicy"],
+                        intensity=item["intensity"],
+                        primary_aromas=item["primary_aromas"],
+                        texture_profile=item["texture_profile"],
+                        dominant_compounds=item["dominant_compounds"]
+                    )
+                    db.add(fp)
+
+            # Reclassify legacy 'Produce' into distinct Vegetables and Fruits
+            FRUIT_NAMES = {"mango", "lime", "lemon", "apple", "green apple", "strawberry", "pomegranate", "watermelon", "orange", "banana", "peach", "blueberry", "raspberry", "papaya", "guava", "lychee", "jackfruit", "custard apple", "fig", "pineapple", "kiwi", "grapes", "dragonfruit"}
+            all_ings = db.query(Ingredient).all()
+            for ing in all_ings:
+                n_lower = ing.name.lower()
+                if ing.category == "Produce":
+                    if n_lower in FRUIT_NAMES:
+                        ing.category = "Fruits"
+                    else:
+                        ing.category = "Vegetables"
+            db.commit()
+        except Exception as ex_ind:
+            print(f"Notice on seeding Indian and produce catalog: {ex_ind}")
+
         # 3. Seed Pairing Evidence
         try:
             from scripts.seed_more_ingredients import EXPANDED_PAIRINGS

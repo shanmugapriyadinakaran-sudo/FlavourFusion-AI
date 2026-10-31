@@ -43,9 +43,32 @@ export const IngredientExplorer: React.FC<IngredientExplorerProps> = ({ onAddIng
   // Added notification feedback
   const [recentlyAdded, setRecentlyAdded] = useState<string | null>(null);
 
-  const categories = ['All', 'Produce', 'Spice', 'Herb', 'Dairy', 'Pantry', 'Grain', 'Legume'];
-  const cuisines = ['All', 'Indian', 'Mediterranean', 'Italian', 'Mexican', 'Southeast Asian', 'Global'];
-  const allergenOptions = ['Dairy', 'Nuts', 'Soy', 'Gluten', 'Sesame'];
+  const categories = [
+    'All',
+    'Vegetables',
+    'Fruits',
+    'Spices & Herbs',
+    'Grains & Lentils',
+    'Dairy & Cheese',
+    'Meat & Seafood',
+    'Sweets & Bakery',
+    'Sauces & Condiments',
+  ];
+  const cuisines = [
+    'All',
+    'Indian',
+    'South Indian',
+    'North Indian',
+    'Italian',
+    'Chinese',
+    'Spanish',
+    'Mexican',
+    'Mediterranean',
+    'Japanese',
+    'French',
+    'Global',
+  ];
+  const allergenOptions = ['Dairy', 'Nuts', 'Soy', 'Gluten', 'Mustard', 'Sesame', 'Shellfish', 'Eggs'];
 
   useEffect(() => {
     loadIngredients();

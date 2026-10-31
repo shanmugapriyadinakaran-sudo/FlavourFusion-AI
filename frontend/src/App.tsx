@@ -21,12 +21,8 @@ import { RegisterPage } from './pages/RegisterPage';
 import { SelectedIngredient } from './types';
 
 export const AppContent: React.FC = () => {
-  // Global active combination state for Flavor Lab
-  const [selectedIngredients, setSelectedIngredients] = useState<SelectedIngredient[]>([
-    { name: 'Mango', quantity: 150, unit: 'g', preparation_method: 'Raw' },
-    { name: 'Curd', quantity: 100, unit: 'g', preparation_method: 'Raw' },
-    { name: 'Cardamom', quantity: 2, unit: 'g', preparation_method: 'Raw' },
-  ]);
+  // Global active combination state for Flavor Lab (initialized empty)
+  const [selectedIngredients, setSelectedIngredients] = useState<SelectedIngredient[]>([]);
 
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);

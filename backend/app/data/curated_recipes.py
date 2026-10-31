@@ -568,5 +568,244 @@ CURATED_RECIPE_CATALOG: List[Dict[str, Any]] = [
             {"name": "Fresh Basil", "amount": "6 leaves", "purpose": "Garnish"}
         ],
         "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 116,
+        "title": "Authentic Madras Drumstick Sambar with Aromatic Tadka",
+        "summary": "Hearty yellow toor dal simmered with tender drumsticks, shallots, and tamarind pulp, tempered with mustard seeds, curry leaves, and asafoetida.",
+        "cuisine": "South Indian",
+        "meal_type": "Lunch",
+        "prep_time_mins": 15,
+        "cook_time_mins": 25,
+        "servings": 4,
+        "difficulty": "Medium",
+        "ingredients_list": [
+            {"name": "Toor Dal", "quantity": 150.0, "unit": "g", "notes": "Boiled soft and whisked smooth"},
+            {"name": "Drumstick", "quantity": 2.0, "unit": "piece", "notes": "Cut into 2-inch batons"},
+            {"name": "Sambar Powder", "quantity": 2.0, "unit": "tbsp", "notes": "Freshly roasted spice blend"},
+            {"name": "Tamarind Paste", "quantity": 1.5, "unit": "tbsp", "notes": "Extracted in 1 cup warm water"},
+            {"name": "Tomato", "quantity": 2.0, "unit": "piece", "notes": "Roughly chopped"},
+            {"name": "Shallot", "quantity": 8.0, "unit": "piece", "notes": "Small Indian sambar onions peeled"},
+            {"name": "Mustard Seeds", "quantity": 1.0, "unit": "tsp", "notes": "For tempering"},
+            {"name": "Curry Leaves", "quantity": 10.0, "unit": "leaves", "notes": "Fresh vibrant leaves"},
+            {"name": "Asafoetida", "quantity": 1.0, "unit": "pinch", "notes": "High-grade compounding Hing"},
+            {"name": "Ghee", "quantity": 1.5, "unit": "tbsp", "notes": "Or coconut oil for tempering"}
+        ],
+        "required_tools": ["Pressure Cooker or Deep Pot", "Tadka Tadka Ladle / Small Sauté Pan", "Whisk"],
+        "required_vessels": ["Heavy Bottom Brass / Stainless Steel Pot", "Tempering Ladle"],
+        "steps": [
+            "Cook toor dal in pressure cooker with turmeric and water for 4 whistles until completely mashable; whisk until creamy.",
+            "In the main pot, simmer drumstick pieces, peeled sambar onions, and chopped tomatoes in 2 cups water until vegetables are tender (about 10 mins).",
+            "Pour in extracted tamarind water and sambar powder. Simmer for 8 minutes until raw tamarind smell dissipates.",
+            "Stir in the mashed cooked toor dal and salt. Simmer gently on medium-low heat for 5 minutes.",
+            "Prepare the iconic Tadka: heat ghee in tempering ladle. Add mustard seeds and let them crackle furiously.",
+            "Add a pinch of asafoetida, dried red chilies, and fresh curry leaves; let the leaves crisp for 5 seconds.",
+            "Pour the sizzling aromatic tadka directly into the simmering sambar and immediately cover with lid for 2 minutes to lock in the volatile aromas.",
+            "Garnish with freshly plucked cilantro and serve piping hot with steamed idlis or fragrant Ponni boiled rice."
+        ],
+        "allergens": [],
+        "substitutions": ["Pumpkin, radish (mullangi), or shallots can be used instead of drumstick."],
+        "needed_ingredients": [
+            {"name": "Turmeric Powder", "amount": "1/2 tsp", "purpose": "Color and antioxidant depth"},
+            {"name": "Sea Salt", "amount": "1.5 tsp", "purpose": "Seasoning"}
+        ],
+        "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 117,
+        "title": "Crispy Ghee Roast Dosa with Fresh Coconut Chutney",
+        "summary": "Paper-thin, golden lacy fermented rice-lentil crêpe roasted in fragrant desi ghee, served with stone-ground coconut chutney tempered with mustard and curry leaves.",
+        "cuisine": "South Indian",
+        "meal_type": "Breakfast",
+        "prep_time_mins": 10,
+        "cook_time_mins": 10,
+        "servings": 2,
+        "difficulty": "Medium",
+        "ingredients_list": [
+            {"name": "Idli Dosa Batter", "quantity": 250.0, "unit": "ml", "notes": "Naturally fermented room temperature batter"},
+            {"name": "Ghee", "quantity": 3.0, "unit": "tbsp", "notes": "Desi cow ghee for roasting"},
+            {"name": "Grated Fresh Coconut", "quantity": 100.0, "unit": "g", "notes": "Freshly grated white coconut meat"},
+            {"name": "Chana Dal", "quantity": 1.5, "unit": "tbsp", "notes": "Roasted gram / pottukadalai"},
+            {"name": "Ginger", "quantity": 0.5, "unit": "inch", "notes": "Peeled fresh root"},
+            {"name": "Mustard Seeds", "quantity": 0.5, "unit": "tsp", "notes": "For chutney tempering"},
+            {"name": "Curry Leaves", "quantity": 8.0, "unit": "leaves", "notes": "For chutney tempering"},
+            {"name": "Idli Podi", "quantity": 1.0, "unit": "tbsp", "notes": "Optional spiced gunpowder sprinkle"}
+        ],
+        "required_tools": ["Flat Cast Iron Dosa Tawa", "Flat-Bottom Ladle", "Thin Flat Metal Spatula / Thiruppi", "Small Blender / Mixer"],
+        "required_vessels": ["11-inch Heavy Seasoned Cast Iron Tawa", "Chutney Serving Bowl"],
+        "steps": [
+            "Prepare Coconut Chutney: blend freshly grated coconut, roasted chana dal, fresh green chili, ginger, and salt with 1/4 cup water into a thick, creamy paste.",
+            "Temper chutney: heat 1 tsp coconut oil, crackle mustard seeds, urad dal, and curry leaves; pour over chutney.",
+            "Heat cast iron dosa tawa until smoking hot. Rub with half an onion dipped in oil, splash a few drops of water to check sizzle.",
+            "Pour a ladleful of fermented batter into the center. Using circular motions from inside outward, spread into a paper-thin disc.",
+            "Generously drizzle pure golden ghee around the perimeter and across the surface.",
+            "Cook on medium-high heat without flipping until the underside turns deeply golden, crisp, and lace-like (about 2 mins).",
+            "Sprinkle a touch of spicy Idli Podi across the inner surface if desired, fold into a crisp golden cone or cylinder.",
+            "Transfer immediately to a banana leaf or plate and serve piping hot with the fresh coconut chutney and sambar."
+        ],
+        "allergens": ["Dairy"],
+        "substitutions": ["Sesame oil (Nallennai) can replace ghee for a traditional vegan South Indian roast."],
+        "needed_ingredients": [
+            {"name": "Green Chili", "amount": "1 piece", "purpose": "Heat in coconut chutney"},
+            {"name": "Salt", "amount": "1 tsp", "purpose": "Seasoning"}
+        ],
+        "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 118,
+        "title": "Chettinad Black Pepper & Garlic Rasam (Milagu Rasam)",
+        "summary": "Fiery, restorative South Indian herbal broth infused with freshly crushed Tellicherry black peppercorns, cumin, roasted garlic, and tangy tamarind.",
+        "cuisine": "South Indian",
+        "meal_type": "Dinner",
+        "prep_time_mins": 10,
+        "cook_time_mins": 15,
+        "servings": 3,
+        "difficulty": "Easy",
+        "ingredients_list": [
+            {"name": "Black Pepper", "quantity": 1.5, "unit": "tbsp", "notes": "Whole Tellicherry peppercorns coarsely crushed"},
+            {"name": "Cumin Seeds", "quantity": 1.0, "unit": "tbsp", "notes": "Coarsely crushed with pepper"},
+            {"name": "Garlic", "quantity": 8.0, "unit": "cloves", "notes": "Crushed with skins on for intense aroma"},
+            {"name": "Tomato", "quantity": 2.0, "unit": "piece", "notes": "Crushed by hand into a coarse pulp"},
+            {"name": "Tamarind Paste", "quantity": 1.0, "unit": "tbsp", "notes": "Extracted in 2 cups warm water"},
+            {"name": "Curry Leaves", "quantity": 10.0, "unit": "leaves", "notes": "Fresh torn leaves"},
+            {"name": "Mustard Seeds", "quantity": 0.5, "unit": "tsp", "notes": "For tempering"},
+            {"name": "Asafoetida", "quantity": 1.0, "unit": "pinch", "notes": "Hing"},
+            {"name": "Ghee", "quantity": 1.0, "unit": "tbsp", "notes": "For final tempering"}
+        ],
+        "required_tools": ["Stone Mortar & Pestle", "Deep Pot / Eeyam Sombu"],
+        "required_vessels": ["Traditional Tin/Brass Rasam Pot or Deep Stainless Pot"],
+        "steps": [
+            "In stone mortar and pestle, coarsely crush whole black peppercorns and cumin seeds; add garlic cloves and pound roughly.",
+            "In pot, combine hand-crushed tomatoes, tamarind water, turmeric, half the crushed pepper-cumin-garlic mix, salt, and curry leaves.",
+            "Bring to a gentle boil for 6 minutes until the raw tamarind smell is replaced by rich aromatic warmth.",
+            "Add 1.5 cups water and the remaining freshly pounded pepper-cumin-garlic mix. Reduce heat to low.",
+            "Watch closely: as soon as the rasam forms a frothy yellow head on top, TURN OFF THE HEAT IMMEDIATELY. Never boil rasam after frothing, or volatile pepper aromas evaporate.",
+            "In a small ladle, heat ghee. Crackle mustard seeds, a pinch of hing, and curry leaves. Pour sizzling into the rasam.",
+            "Cover tightly for 5 minutes. Serve as a piping hot soothing soup or over steamed rice with potato roast."
+        ],
+        "allergens": [],
+        "substitutions": ["Add 2 tbsp cooked toor dal water for Paruppu Rasam style body."],
+        "needed_ingredients": [
+            {"name": "Turmeric", "amount": "1/2 tsp", "purpose": "Color and immunity"},
+            {"name": "Fresh Cilantro", "amount": "2 tbsp", "purpose": "Finishing garnish"}
+        ],
+        "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 119,
+        "title": "Delhi Shahi Paneer Butter Masala with Kasuri Methi",
+        "summary": "Succulent cubes of fresh artisanal paneer simmered in a silky, slow-cooked makhani gravy of San Marzano tomatoes, cashews, butter, and crushed Kasuri Methi.",
+        "cuisine": "North Indian",
+        "meal_type": "Dinner",
+        "prep_time_mins": 15,
+        "cook_time_mins": 25,
+        "servings": 3,
+        "difficulty": "Medium",
+        "ingredients_list": [
+            {"name": "Paneer", "quantity": 250.0, "unit": "g", "notes": "Fresh malai paneer cut into 1-inch cubes"},
+            {"name": "Tomato", "quantity": 4.0, "unit": "piece", "notes": "Pureed smooth (or San Marzano passata)"},
+            {"name": "Butter", "quantity": 40.0, "unit": "g", "notes": "Desi makhan / unsalted butter"},
+            {"name": "Heavy Cream", "quantity": 60.0, "unit": "ml", "notes": "Fresh cooking cream"},
+            {"name": "Kasuri Methi", "quantity": 1.5, "unit": "tbsp", "notes": "Lightly toasted and crushed between palms"},
+            {"name": "Garam Masala", "quantity": 1.0, "unit": "tsp", "notes": "Aromatic finishing spice"},
+            {"name": "Kashmiri Red Chili", "quantity": 1.5, "unit": "tsp", "notes": "For vibrant crimson color without sharp heat"},
+            {"name": "Ginger", "quantity": 1.0, "unit": "tbsp", "notes": "Finely julienned"},
+            {"name": "Garlic", "quantity": 4.0, "unit": "cloves", "notes": "Minced fine"}
+        ],
+        "required_tools": ["High-Speed Blender", "12-inch Sauté Pan", "Fine Mesh Strainer"],
+        "required_vessels": ["Heavy Bottom Sauté Pan / Kadai", "Blender Jar"],
+        "steps": [
+            "In sauté pan, melt 1 tbsp butter; sauté whole cloves, green cardamom, garlic, ginger, and chopped tomatoes with 10 cashews for 10 minutes until soft.",
+            "Transfer cooked tomato base to blender; blend until completely velvety. Strain through fine mesh for restaurant-grade silky consistency.",
+            "In same pan, melt remaining butter over medium heat. Add Kashmiri chili powder to the butter for 5 seconds to release deep crimson color without burning.",
+            "Pour strained silky tomato-cashew makhani gravy into the pan. Simmer for 6 minutes until butter begins separating at the margins.",
+            "Gently slide fresh paneer cubes into the bubbling sauce. Simmer for 3 minutes so paneer absorbs the gravy without turning rubbery.",
+            "Swirl in heavy cream and sprinkle garam masala.",
+            "Take Kasuri Methi between palms, rub vigorously into fragrant flakes, and scatter across the top.",
+            "Rest covered for 2 minutes and serve with charred garlic naan or aromatic jeera rice."
+        ],
+        "allergens": ["Dairy", "Nuts"],
+        "substitutions": ["Firm pressed tofu can replace paneer; coconut cream can replace dairy cream for vegan preparation."],
+        "needed_ingredients": [
+            {"name": "Raw Cashews", "amount": "10 pieces", "purpose": "Gravy body and rich creaminess"},
+            {"name": "Sugar or Honey", "amount": "1/2 tsp", "purpose": "Balancing tomato acidity"}
+        ],
+        "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 120,
+        "title": "Punjabi Dhaba Style Rajma Masala & Jeera Rice",
+        "summary": "Plump red kidney beans slow-simmered in a rich, deeply caramelized onion-tomato-ginger masala, seasoned with garam masala, amchur, and cilantro.",
+        "cuisine": "North Indian",
+        "meal_type": "Lunch",
+        "prep_time_mins": 15,
+        "cook_time_mins": 35,
+        "servings": 4,
+        "difficulty": "Medium",
+        "ingredients_list": [
+            {"name": "Rajma", "quantity": 250.0, "unit": "g", "notes": "Red kidney beans soaked overnight and boiled tender"},
+            {"name": "Onion", "quantity": 2.0, "unit": "piece", "notes": "Finely diced for deep caramelization"},
+            {"name": "Tomato", "quantity": 3.0, "unit": "piece", "notes": "Finely pureed"},
+            {"name": "Ginger", "quantity": 1.5, "unit": "tbsp", "notes": "Grated fresh"},
+            {"name": "Garlic", "quantity": 6.0, "unit": "cloves", "notes": "Minced"},
+            {"name": "Cumin Seeds", "quantity": 1.0, "unit": "tsp", "notes": "Whole jeera"},
+            {"name": "Garam Masala", "quantity": 1.0, "unit": "tsp", "notes": "Warm blend"},
+            {"name": "Amchur", "quantity": 0.5, "unit": "tsp", "notes": "Dry mango powder for tang"},
+            {"name": "Ghee", "quantity": 2.0, "unit": "tbsp", "notes": "Or mustard oil for dhaba flavor"}
+        ],
+        "required_tools": ["Pressure Cooker or Dutch Oven", "Potato Masher", "Wooden Spoon"],
+        "required_vessels": ["Heavy Bottom Kadai / Dutch Oven", "Rice Cooking Pot"],
+        "steps": [
+            "Boil soaked Rajma in pressure cooker with 1 black cardamom pod, bay leaf, and salt for 6 whistles until melt-in-the-mouth soft.",
+            "Heat ghee in kadai. Add cumin seeds and let them sizzle until fragrant and dark brown.",
+            "Add finely chopped onions. Sauté patiently on medium heat for 12 minutes (bhunao) until deep golden brown.",
+            "Add grated ginger and minced garlic; cook for 90 seconds until the raw edge mellows.",
+            "Pour in tomato puree, coriander powder, turmeric, and Kashmiri chili powder. Cook until oil separates from the masala (about 8 mins).",
+            "Add the boiled rajma along with its flavorful cooking broth. Bring to a vigorous simmer.",
+            "Use a potato masher to lightly crush 15% of the beans against the pan wall — this releases natural starches that thicken the gravy into velvety heaven.",
+            "Simmer on low heat for 15 minutes. Stir in garam masala, amchur powder, and fresh cilantro leaves.",
+            "Serve steaming hot over a bed of fragrant basmati jeera rice with sliced red onions and lemon wedges."
+        ],
+        "allergens": [],
+        "substitutions": ["Canned dark red kidney beans can be used for a 20-minute weeknight shortcut."],
+        "needed_ingredients": [
+            {"name": "Coriander Powder", "amount": "1.5 tbsp", "purpose": "Earthy body"},
+            {"name": "Basmati Rice", "amount": "200 g", "purpose": "Jeera rice accompaniment"}
+        ],
+        "generation_mode": "Master Chef Curated"
+    },
+    {
+        "id": 121,
+        "title": "Street Cart Spiced Pink Guava & Chaat Masala",
+        "summary": "Crisp sweet-tart pink guava wedges dusted with Himalayan black salt, tangy amchur, Kashmiri red chili flakes, and fresh lime juice.",
+        "cuisine": "Indian",
+        "meal_type": "Snack",
+        "prep_time_mins": 5,
+        "cook_time_mins": 0,
+        "servings": 2,
+        "difficulty": "Easy",
+        "ingredients_list": [
+            {"name": "Guava", "quantity": 2.0, "unit": "piece", "notes": "Ripe pink or white guavas with crisp firm flesh"},
+            {"name": "Chaat Masala", "quantity": 1.0, "unit": "tsp", "notes": "Authentic blend with Kala Namak"},
+            {"name": "Kashmiri Red Chili", "quantity": 0.5, "unit": "tsp", "notes": "Mild fruit-forward chili powder"},
+            {"name": "Lime", "quantity": 1.0, "unit": "piece", "notes": "Freshly squeezed"},
+            {"name": "Mint", "quantity": 4.0, "unit": "leaves", "notes": "Finely chiffonaded for refreshing top notes"}
+        ],
+        "required_tools": ["Chef's Knife & Board", "Small Mixing Bowl"],
+        "required_vessels": ["Serving Bowl / Chaat Plate"],
+        "steps": [
+            "Wash guavas thoroughly and slice into 1/2-inch thick wedges or crescents, keeping the crunchy seeds intact.",
+            "Arrange guava slices in a shallow bowl or serving platter.",
+            "In a small bowl, mix chaat masala, Kashmiri chili powder, and a tiny pinch of sea salt.",
+            "Dust the spiced chaat powder generously over every guava wedge.",
+            "Squeeze fresh lime juice directly over the spiced fruit to dissolve the salt and awaken the tropical caryophyllene volatiles.",
+            "Scatter fresh mint ribbons over top and serve immediately with cocktail picks."
+        ],
+        "allergens": [],
+        "substitutions": ["Raw mango, crisp green apple, or pineapple slices can be prepared with the exact same chaat seasoning."],
+        "needed_ingredients": [
+            {"name": "Flaky Sea Salt", "amount": "1 pinch", "purpose": "Crystalline crunch"}
+        ],
+        "generation_mode": "Master Chef Curated"
     }
 ]
